@@ -18,12 +18,17 @@ englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
 
     // 2. Write an if-else conditional statement.
+    if(englishInput === "Mon" || englishInput === "mon") {
+
+        document.querySelector(".english-message").innerHTML = "Correct!";
+    }
+    else {
+        document.querySelector(".english-message").innerHTML = "Wrong! Try again.";
+    }
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
-
 
 
 });
@@ -41,7 +46,12 @@ mathButton.addEventListener("click", function() {
     //  - The answer should be 30.
     //  - If the user enters the correct answer, use .innerHTML to display the word "Yessss!" in the ".math-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
+    if(mathInput === 30) {
+        document.querySelector(".math-message").innerHTML = "Yessss!";
+    }
+    else {
+        document.querySelector(".math-message").innerHTML = "Wrong! Try again.";
+    }
 
 });
 
@@ -54,7 +64,12 @@ ssButton.addEventListener("click", function() {
     //  - The answer should be "Albany".
     //  - If the user enters the correct answer, use .innerHTML to display the word "You got it!" in the ".ss-message" div. 
     //  - If incorrect, display "Womp, womp. Try again."
-
+    if(ssInput === "Albany") {
+        document.querySelector(".ss-message").innerHTML = "You got it!";
+    }
+    else {
+        document.querySelector(".ss-message").innerHTML = "Womp, womp. Try again.";
+    }
 
 
 });
@@ -70,7 +85,12 @@ scienceButton.addEventListener("click", function() {
     //  - The answer should be "solid".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Rockstar!" in the ".science-message" div. 
     //  - If incorrect, display "Sad. Try again."
-
+    if(document.querySelector(".science").value === "solid") {
+        document.querySelector(".science-message").innerHTML = "Rockstar!";
+    }
+    else {
+        document.querySelector(".science-message").innerHTML = "Sad. Try again.";
+    }
 
 
 });
